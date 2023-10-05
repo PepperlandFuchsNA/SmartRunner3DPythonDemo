@@ -1,0 +1,35 @@
+#settings file for PCD Capture Program
+
+#################Connection settings#######################
+#This section is to set all the connection settings require to connect Smart Runner 3D
+
+#What is the IP address of your R2300?
+SR3D_IP_Address = 192.168.2.4
+
+##############SR3D View PCD settings, make it false if you don't want to view the captured pcd####################
+
+ViewPCD = True
+
+##############SR3D Get Parameter, True if you want to push it, else False ####################
+
+Get_Parameter = False
+
+
+##############SR3D Push Parameter, True if you want to push it, else False ####################
+
+Push_Parameter = False
+
+##############SR3D Parameter settings####################
+
+    TriggerEnabled = True
+    TriggerSource = AutoTrigger
+    TriggerActivation = RisingEdge
+    AutoTriggerFrameRate = 10.0
+    Illumination = Projector
+    Gain = 106
+    SGBMPenalty1 = 4
+    SGBMPenalty2 = 31
+    SGBMEnableMedian = True
+    SGBMUniqueness = 47
+    OutputMode = DisparityCAndRaw
+    ExposureTime = 8922
